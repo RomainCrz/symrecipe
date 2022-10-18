@@ -70,6 +70,14 @@ class IngredientController extends AbstractController
     }
 
 
+    /**
+     * Undocumented function
+     *
+     * @param Ingredient $ingredient
+     * @param Request $request
+     * @param EntityManagerInterface $manager
+     * @return Response
+     */
     #[Route("/ingredient/edition/{id}", "ingredient.edit", methods: ["GET", "POST"])]
     public function edit(Ingredient $ingredient, Request $request, EntityManagerInterface $manager): Response
     {
